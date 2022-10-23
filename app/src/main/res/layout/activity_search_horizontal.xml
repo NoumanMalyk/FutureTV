@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/row_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/lyt_not_found"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_no_item"
+            android:tint="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_item_found"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/adView"
+        android:layout_below="@+id/toolbar_main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lytMovie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp">
+
+                    <View
+                        android:id="@+id/viewLatestMovie"
+                        android:layout_width="2dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@color/yellow" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/viewLatestMovie"
+                        android:layout_toStartOf="@+id/textLatestMovieViewAll"
+                        android:gravity="start">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_movie"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textLatestMovieViewAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/view_all"
+                        android:textColor="@color/yellow"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <com.bosphere.fadingedgelayout.FadingEdgeLayout
+                        android:id="@+id/feMovie"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:fel_edge="right"
+                        app:fel_size_right="@dimen/shadow_size">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_latest_movie"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.bosphere.fadingedgelayout.FadingEdgeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lytHomeTVSeries"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp">
+
+                    <View
+                        android:id="@+id/viewTVSeries"
+                        android:layout_width="2dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@color/yellow" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/viewTVSeries"
+                        android:layout_toStartOf="@+id/textTVSeriesViewAll"
+                        android:gravity="start">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_tv_series"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textTVSeriesViewAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/view_all"
+                        android:textColor="@color/yellow"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <com.bosphere.fadingedgelayout.FadingEdgeLayout
+                        android:id="@+id/feSeries"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:fel_edge="right"
+                        app:fel_size_right="@dimen/shadow_size">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_tv_series"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.bosphere.fadingedgelayout.FadingEdgeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lytHomeLatestChannel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="10dp">
+
+                    <View
+                        android:id="@+id/viewLatestChannel"
+                        android:layout_width="2dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentStart="true"
+                        android:background="@color/yellow" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/viewLatestChannel"
+                        android:layout_toStartOf="@+id/textLatestChannelViewAll"
+                        android:gravity="start">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/menu_tv_channel"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textLatestChannelViewAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/view_all"
+                        android:textColor="@color/yellow"
+                        android:textSize="12sp" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <com.bosphere.fadingedgelayout.FadingEdgeLayout
+                        android:id="@+id/feChannel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:fel_edge="right"
+                        app:fel_size_right="@dimen/shadow_size">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_latest_channel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.bosphere.fadingedgelayout.FadingEdgeLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" />
+
+</RelativeLayout>

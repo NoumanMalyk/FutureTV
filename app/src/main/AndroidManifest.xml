@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.futurevalley.futurestudio"
+    tools:ignore="LockedOrientationActivity">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.futurevalley.futurestudio.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.futurevalley.futurestudio.SplashActivity"
+            android:exported="false">
+
+        </activity>
+
+        <activity
+            android:name="com.futurevalley.futurestudio.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.futurevalley.futurestudio.IntroActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.futurevalley.futurestudio.SignInActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.futurevalley.futurestudio.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.futurevalley.futurestudio.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name="com.futurevalley.futurestudio.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.futurevalley.futurestudio.MovieDetailsActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.futurevalley.futurestudio.SeriesDetailsActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name="com.futurevalley.futurestudio.TVDetailsActivity"
+            android:configChanges="orientation|screenLayout|screenSize"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+
+
+        <activity
+            android:name="com.futurevalley.futurestudio.EmbeddedPlayerActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="sensor" />
+
+        <activity
+            android:name="com.futurevalley.futurestudio.AllCommentActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+
+        <activity
+            android:name="com.futurevalley.futurestudio.RelatedAllMovieActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.futurevalley.futurestudio.RelatedAllChannelActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.futurevalley.futurestudio.RelatedAllSeriesActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.futurevalley.futurestudio.SearchActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.futurevalley.futurestudio.SearchHorizontalActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.futurevalley.futurestudio.SearchAllMovieActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.futurevalley.futurestudio.SearchAllChannelActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.futurevalley.futurestudio.SearchAllSeriesActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.futurevalley.futurestudio.AcceptActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- Activity required to show ad overlays. -->
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+        <meta-data
+            android:name="com.onesignal.NotificationAccentColor.DEFAULT"
+            android:value="FF1C6CC3" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="@string/admob_app_id" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <meta-data
+            android:name="com.google.android.gms.cast.framework.OPTIONS_PROVIDER_CLASS_NAME"
+            android:value="com.futurevalley.cast.CastOptionsProvider" />
+
+        <activity
+            android:name="com.futurevalley.cast.ExpandedControlsActivity"
+            android:theme="@style/Theme.CastVideosDark" />
+
+    </application>
+    <queries>
+        <intent>
+            <action android:name="com.google.android.youtube.api.service.START" />
+        </intent>
+    </queries>
+
+</manifest>

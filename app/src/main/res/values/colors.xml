@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1c6cc3</color>
+    <color name="colorPrimaryDark">#1961af</color>
+    <color name="colorAccent">#ff9933</color>
+
+    <color name="bg">#282828</color>
+    <color name="blue">#1c6cc3</color>
+    <color name="white">#ffffff</color>
+    <color name="yellow">#ff9933</color>
+
+    <color name="intro_sub_text">#d2d2d3</color>
+    <color name="intro_circle_un_select">#868686</color>
+    <color name="transparent">#00000000</color>
+    <color name="white_light">#cccccc</color>
+    <color name="view_login">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <!--forgot password-->
+    <color name="forgot_text_black">#313131</color>
+    <color name="gray">#7A7B7D</color>
+    <color name="gray_line">#7A7B7D</color>
+
+    <!--privacy policy & about us & setting-->
+    <color name="black_bg_about">#000000</color>
+    <color name="setting_text">#d6d6d6</color>
+    <color name="setting_divider">#292b30</color>
+    <color name="about_us_Text">#424242</color>
+    <color name="about_us_SubText">#767676</color>
+
+    <color name="tv_text_bg">#3e3e3e</color>
+    <color name="genre_view_bg">#80000000</color>
+
+    <color name="navigation_default">#666666</color>
+    <color name="navigation_checked">#1c6cc3</color>
+    <color name="navigation_item_bg_default">#ffffff</color>
+    <color name="navigation_item_bg_checked">#f3f3f3</color>
+
+    <color name="title_box_bg">#363636</color>
+    <color name="title_sub_text">#9f9f9f</color>
+    <color name="detail_divider">#444444</color>
+    <color name="edit_text_line">#8c8c8c</color>
+    <color name="comment_sub_text">#bdbdbd</color>
+    <color name="rate_text">#606060</color>
+
+    <color name="report_bg">#f7f7f7</color>
+    <color name="report_edit_bg">#f0f0f0</color>
+    <color name="report_edit_border">#d9d9d9</color>
+    <color name="report_edit_text">#606060</color>
+
+    <!--Season -->
+    <color name="season_text">#e6e6e6</color>
+    <color name="season_line">#323333</color>
+
+    <!--player setting text -->
+    <color name="player_setting_text">#717171</color>
+</resources>

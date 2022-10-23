@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="120dp"
+    android:layout_height="180dp"
+    android:layout_marginBottom="@dimen/item_space"
+    android:layout_marginEnd="@dimen/item_space"
+    android:orientation="vertical"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="false"
+    app:elevation="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.makeramen.roundedimageview.RoundedImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            app:riv_corner_radius="5dp" />
+
+        <View
+            android:id="@+id/view_movie_adapter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/image_gradient_bg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textLang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="80dp"
+            android:paddingBottom="5dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="5dp"
+            android:paddingTop="5dp"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

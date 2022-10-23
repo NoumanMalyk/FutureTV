@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/report_bg"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tv_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/report_message"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="40dp"
+                android:layout_height="2dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="centerCrop"
+                android:src="@color/yellow"
+                app:riv_corner_radius="2dp" />
+
+            <EditText
+                android:id="@+id/et_report"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/report_edit_bg"
+                android:gravity="top"
+                android:hint="@string/report_message"
+                android:maxLines="5"
+                android:minLines="4"
+                android:padding="12dp"
+                android:textColor="@color/report_edit_text"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/button_report_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/blue_btn"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="@string/submit"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

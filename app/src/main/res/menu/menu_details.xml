@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_cast_play"
+        android:icon="@drawable/baseline_cast_white_24"
+        android:title="@string/app_name"
+        android:visible="false"
+        app:showAsAction="always" />
+
+</menu>

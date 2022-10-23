@@ -1,0 +1,162 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Future TV</string>
+
+    <!--intro screen-->
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="intro_1_title">Show Off</string>
+    <string name="intro_1_desc">Display Channel based on Category , Latest and Featured also play in External Player as well</string>
+    <string name="intro_2_title">Chromecast Channel </string>
+    <string name="intro_2_desc">Play Channel in TV using Google Cast</string>
+    <string name="intro_3_title">Youtube Video</string>
+    <string name="intro_3_desc">Play Youtube Video as well as Live Youtube Video</string>
+
+    <!--Login/Register -->
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sign_into_continue">Sign in to continue</string>
+    <string name="name_login">Name</string>
+    <string name="email_login">Email</string>
+    <string name="password_login">Password</string>
+    <string name="phone_login">Phone</string>
+    <string name="remember_me">Remember Me</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Your Password ?</string>
+    <string name="no_account">Don\'t Have an Account? </string>
+    <string name="sign_up">Sign Up</string>
+    <string name="register">Register</string>
+    <string name="already_account">Already Have an Account? </string>
+    <string name="forgot_description">Enter your email address below and  we\'ll send you email with password</string>
+    <string name="button_text_forgot_password">Forgot your password?</string>
+    <string name="please_enter_email">Enter your email</string>
+    <string name="send">Send</string>
+    <string name="update">Update</string>
+
+    <!--Navigation drawer -->
+    <string name="menu_home">Home</string>
+    <string name="menu_movie">Movies</string>
+    <string name="menu_tv_series">TV Series</string>
+    <string name="menu_tv_channel">TV Channel</string>
+    <string name="menu_favourite">Favourite</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_setting">Settings</string>
+    <string name="menu_log_out">Logout</string>
+    <string name="menu_log_in">Login</string>
+    <string name="menu_recent">Recently Viewed</string>
+
+    <string name="drawer_open">Drawer Open</string>
+    <string name="drawer_close">Drawer Close</string>
+    <string name="conne_msg1">No Network Connection!!!</string>
+    <string name="loading">Loading</string>
+    <string name="no_item_found">No Item Found</string>
+
+    <!--setting -->
+    <string name="enable_push">Enable Push Notification</string>
+    <string name="rate_app">Rate App</string>
+    <string name="more_app">More App</string>
+    <string name="share_app">Share App</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="about">About</string>
+
+    <!--<about_us.xml string>-->
+    <string name="about_us_version">Verson</string>
+    <string name="about_us_version_text">2.1.5(1020)</string>
+    <string name="about_us_author">Author</string>
+    <string name="about_us_Company">Company</string>
+    <string name="about_us_company_name">Viavi Webtech</string>
+    <string name="about_us_email">Email</string>
+    <string name="about_us_email_text">info@viaviweb.com</string>
+    <string name="about_us_website">Website</string>
+    <string name="about_us_website_text">www.viaviweb.com</string>
+    <string name="about_us_contact">Contact</string>
+    <string name="about_us_contact_text">+91 (123) (456) (5678)</string>
+    <string name="about_us_about">About</string>
+
+    <!-- if you want to RTL then put it true other wise it false-->
+    <string name="isRTL">false</string>
+
+    <string name="tag_line">Watch Live TV</string>
+    <string name="share_msg">Hi,I would like to share Application which is used to play tv and movies free please download it from Google Play Store Free Here \n https://play.google.com/store/apps/details?id=</string>
+    <string name="play_more_apps">https://play.google.com/store/apps/developer?id=Viaan+Parmar</string>
+    <string name="back_key">Please click BACK again to exit</string>
+
+    <!--Details Screen -->
+    <string name="overview">Overview</string>
+    <string name="report_here">Report Here</string>
+    <string name="related_movie">Related Movies</string>
+    <string name="related_series">Related Series</string>
+    <string name="related_channel">Related Channel</string>
+    <string name="comments">Comments</string>
+    <string name="view_all">View All</string>
+    <string name="leave_your_comment">Leave Your Comments.</string>
+    <string name="no_comment_found">No Comment Found</string>
+    <string name="all_comment">All Comment</string>
+    <string name="season">Season</string>
+    <string name="no_episode_found">No Episode Found</string>
+
+    <string name="rating">Rating....</string>
+    <string name="rating_des">How likely are you to recommend Moovit to a friend? (1-low,5-high)</string>
+    <string name="submit">Submit</string>
+
+    <string name="report_message">Report Message</string>
+
+    <string name="favourite_add">Favourite has been saved</string>
+    <string name="favourite_remove">Favourite has been removed</string>
+    <string name="no_fav">No Favourite Found</string>
+    <string name="search">Search</string>
+    <string name="total_num_season">Total No of Season - %d</string>
+    <string name="triangle_down">\u25BC</string>
+
+    <!--home -->
+    <string name="home_category">TV Categories</string>
+    <string name="home_latest_movie">Latest Movies</string>
+    <string name="home_tv_series">TV Series</string>
+    <string name="home_latest_channel">Latest Channel</string>
+
+    <string name="logout_msg">Are you sure you want to logout?</string>
+    <string name="login_first">You have to login first for %s</string>
+    <string name="login_first_rate">rating</string>
+    <string name="login_first_comment">comment</string>
+    <string name="login_first_report">report</string>
+
+    <string name="youtube_api_key">AIzaSyBLRdGZ0j7Oy7AyFSCGMxCw8YxGdRj8buw</string>
+    <string name="try_again">Try Again</string>
+    <string name="stream_not_found">Unfortunately stream url does not found please report it</string>
+    <string name="now_playing">Now Playing</string>
+
+    <string name="genre">Genre</string>
+    <string name="language">Language</string>
+
+    <string name="admob_app_id">ca-app-pub-8763966130364752~6061564226</string>
+    <string name="default_notification_channel_id">AndroidLiveTVSeries</string>
+
+    <string name="privacy_url">http://apptific.com/PlayStore/Privacy-Policy.html</string>
+
+    <string name="count">%s Views</string>
+    <string name="casty_introduction_text">Use this button to connect with Chromecast</string>
+    <string name="cast_youtube">Youtube and Embedded link direct does not cast</string>
+    <string name="cast_play_custom">Playing in Connected Chromecast</string>
+
+    <string name="invalid_license">Invalid License</string>
+    <string name="license_msg">You are using invalid License or Package name is already in use, for more information contact us: info@viaviweb.com or viaviwebtech@gmail.com</string>
+    <string name="something_went">Something went wrong please restart application</string>
+    <string name="user_disable">Admin was disable or deleted you as user</string>
+
+    <!--player setting-->
+    <string name="player_setting">Setting</string>
+    <string name="quality">Quality</string>
+    <string name="quality_default">default</string>
+    <string name="quality_420p">420p</string>
+    <string name="quality_720p">720p</string>
+    <string name="quality_1080p">1080p</string>
+    <string name="sub_titles">Subtitles</string>
+    <string name="off_sub_title">OFF</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="sign_in_accept">By Signing in you accept %s </string>
+    <string name="sign_up_accept">By Signing up you accept %s </string>
+    <string name="please_accept">Please select accept checkbox </string>
+
+    <string name="onesignal_app_id" tools:ignore="TypographyDashes">xxxccc-20fd-4b84-9f16-ed8f191f8da5</string>
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "493400666627",
+    "firebase_url": "https://live-tv-series.firebaseio.com",
+    "project_id": "live-tv-series",
+    "storage_bucket": "live-tv-series.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493400666627:android:e5c1f598a9ca01e6",
+        "android_client_info": {
+          "package_name": "com.futurevalley.futurestudio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "493400666627-ic55u8d7r5m5qb0k9s6r6mtp7cicr6rc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK2VOzAZVipOQcV713w8VANWO6cRSNDLw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "493400666627-ic55u8d7r5m5qb0k9s6r6mtp7cicr6rc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
