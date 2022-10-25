@@ -15,6 +15,7 @@ import androidx.viewpager.widget.ViewPager;
 
 import com.futurevalley.fragment.IntroFragment;
 import com.futurevalley.util.IsRTL;
+import com.futurevalley.util.SharedPrefManager;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
@@ -25,6 +26,15 @@ public class IntroActivity extends AppCompatActivity {
     ViewPager pager;
     PagerAdapter pagerAdapter;
     Button btnNext, btnSkip;
+
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        if(SharedPrefManager.getInstance(IntroActivity.this).getLoginResult().equals("1")){
+           startActivity(new Intent(IntroActivity.this, MainActivity.class));
+        }
+    }
 
     @Override
     protected void attachBaseContext(Context newBase) {
@@ -70,6 +80,7 @@ public class IntroActivity extends AppCompatActivity {
         btnSkip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                SharedPrefManager.getInstance(IntroActivity.this).setLoginResult("1");
                 Intent intent = new Intent(IntroActivity.this, MainActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);

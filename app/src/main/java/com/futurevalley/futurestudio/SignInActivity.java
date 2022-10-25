@@ -19,6 +19,7 @@ import com.futurevalley.util.API;
 import com.futurevalley.util.Constant;
 import com.futurevalley.util.IsRTL;
 import com.futurevalley.util.NetworkUtils;
+import com.futurevalley.util.SharedPrefManager;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.loopj.android.http.AsyncHttpClient;
@@ -100,6 +101,7 @@ public class SignInActivity extends AppCompatActivity implements Validator.Valid
         btnSkip.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                SharedPrefManager.getInstance(SignInActivity.this).setLoginResult("1");
                 Intent intent = new Intent(SignInActivity.this, MainActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(intent);
@@ -230,6 +232,7 @@ public class SignInActivity extends AppCompatActivity implements Validator.Valid
             showToast("Opps. \n" + strMessage);
 
         } else {
+            SharedPrefManager.getInstance(SignInActivity.this).setLoginResult("1");
             MyApp.saveIsLogin(true);
             MyApp.saveLogin(strUserId, strName, strEmail);
             if (isFromOtherScreen) {
@@ -239,6 +242,7 @@ public class SignInActivity extends AppCompatActivity implements Validator.Valid
                 startActivity(i);
                 finish();
             }
+
         }
     }
 

@@ -293,7 +293,6 @@ public class HomeFragment extends Fragment {
                     String categoryId = categoryList.get(position).getCategoryId();
                     Bundle bundle = new Bundle();
                     bundle.putString("Id", categoryId);
-
                     ChannelFragment channelFragment = new ChannelFragment();
                     channelFragment.setArguments(bundle);
                     changeFragment(channelFragment, categoryName);

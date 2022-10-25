@@ -120,13 +120,13 @@ public class AboutFragment extends Fragment {
     }
 
     private void setResult() {
-        txtAppName.setText(itemAbout.getAppName());
+        //txtAppName.setText(itemAbout.getAppName());
         txtVersion.setText(itemAbout.getAppVersion());
         txtCompany.setText(itemAbout.getAppAuthor());
         txtEmail.setText(itemAbout.getAppEmail());
         txtWebsite.setText(itemAbout.getAppWebsite());
         txtContact.setText(itemAbout.getAppContact());
-        Picasso.get().load(Constant.IMAGE_PATH + itemAbout.getAppLogo()).into(imgAppLogo);
+        //Picasso.get().load(Constant.IMAGE_PATH + itemAbout.getAppLogo()).into(imgAppLogo);
 
         String mimeType = "text/html";
         String encoding = "utf-8";
